@@ -129,7 +129,7 @@ class LoginPage extends Component {
   render() {
     return (
       <div className={this.props.classes.root}>
-        <AppBar position="static" color="secondary">
+        <AppBar position="static" color="primary">
           <Toolbar>
             <Typography variant="h6" color="inherit">
               Perky Geek
@@ -163,7 +163,7 @@ class LoginPage extends Component {
                 margin="normal"
                 variant="outlined"
               />
-              <Button type="submit" variant="contained" color="secondary" className={this.props.classes.formButton}>
+              <Button type="submit" variant="contained" color="primary" className={this.props.classes.formButton}>
                 Log in
               </Button>
             </form>
