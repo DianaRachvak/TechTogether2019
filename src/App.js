@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import Routes from './Routes';
-
+import MenuOnLeft from './components/menuList';
+import LoginPage from './components/login';
+import MatchingPage from './components/matchingpage';
+import Survey from './components/survey';
 
 class App extends Component {
   // constructor() {
@@ -20,6 +23,10 @@ class App extends Component {
     return (
       <div className="App">
          <Routes />
+        <MatchingPage />
+        <MenuOnLeft />
+        //<LoginPage />
+        <Survey />
       </div>
     );
   }
