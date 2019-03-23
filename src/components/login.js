@@ -149,7 +149,7 @@ class LoginPage extends Component {
                 className={this.props.classes.textField}
                 type="email"
                 name="email"
-                autoComplete="email"
+                //autoComplete="email"
                 margin="normal"
                 variant="outlined"
               />
@@ -159,7 +159,7 @@ class LoginPage extends Component {
                 label="Password"
                 className={this.props.classes.textField}
                 type="password"
-                autoComplete="current-password"
+                //autoComplete="current-password"
                 margin="normal"
                 variant="outlined"
               />
