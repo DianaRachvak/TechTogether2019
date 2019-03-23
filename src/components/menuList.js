@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Menu, Segment } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+//import { MatchingPage } from './components/matchingpage';
 
 export default class MenuOnLeft extends Component {
   state = { activeItem: 'bio' }
@@ -36,9 +37,9 @@ export default class MenuOnLeft extends Component {
                 onClick={this.handleItemClick}
               />
               <Menu.Item
-                as={Link} to='/match'
+                as={Link} to='/matchingpage'
                 name='Match'
-                active={activeItem === 'match'}
+                active={activeItem === 'MatchingPagee'}
                 onClick={this.handleItemClick}
               />
             </Menu>
