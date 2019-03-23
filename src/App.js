@@ -3,6 +3,7 @@ import './App.css';
 import MenuOnLeft from './components/menuList';
 import LoginPage from './components/login';
 import MatchingPage from './components/matchingpage';
+import Survey from './components/survey';
 
 class App extends Component {
   constructor() {
@@ -23,6 +24,7 @@ class App extends Component {
         <MatchingPage />
         <MenuOnLeft />
         //<LoginPage />
+        <Survey />
       </div>
     );
   }

@@ -166,6 +166,9 @@ class LoginPage extends Component {
               <Button type="submit" variant="contained" color="primary" className={this.props.classes.formButton}>
                 Log in
               </Button>
+              <a href='./components/survey.js'><Button type="submit" variant="contained" color="primary" className={this.props.classes.formButton}>
+                Sign Up
+              </Button></a>
             </form>
           </Paper>
         </div>
