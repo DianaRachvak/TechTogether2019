@@ -27,18 +27,11 @@ class Header extends Component {
             <Navbar color='#212121' dark expand="md" scrolling>
                 { !this.state.isWideEnough && <NavbarToggler onClick = { this.handleOnClick } />}
                 <Collapse isOpen = { this.state.collapse } navbar>
-                    <NavbarNav left>
+                    <NavbarNav>
                         <NavItem>
-                            <Link to="/matchingpage"><strong>Best Matches</strong></Link>
+                            Perky Geeks
                         </NavItem>
                         </NavbarNav>
-                        <Link to="/">Perky Geeks</Link>
-
-                    <NavbarNav right>
-                      <NavItem>
-                          <Link to="/icebreakers"><strong>Icebreakers</strong></Link>
-                      </NavItem>
-                    </NavbarNav>
                 </Collapse>
             </Navbar>
         );

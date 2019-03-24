@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import image1 from './image/image1.jpg';
-import image2 from './image/image2.jpg';
-import image3 from './image/image3.jpg';
+import image from './image/image1.jpg';
 import Grid from '@material-ui/core/Grid';
 import { Card, Image, Container } from 'semantic-ui-react'
 import Button from '@material-ui/core/Button';
@@ -28,7 +26,7 @@ export default class MatchingPage extends Component {
             <Grid item md={4}>
             <Card>
              <Card.Content>
-               <img src={image1} />
+               <img src={image} />
                <Card.Header><strong>Steve</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
@@ -57,8 +55,8 @@ export default class MatchingPage extends Component {
             <Grid item md={4}>
             <Card>
              <Card.Content>
-               <img src={image2}/>
-               <Card.Header><strong>Andrewr</strong></Card.Header>
+               <img src={image}/>
+               <Card.Header><strong>Andrew</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
                  Do you want to accept chatting with <strong>Andrew</strong>?
@@ -86,7 +84,7 @@ export default class MatchingPage extends Component {
             <Grid item md={4}>
             <Card>
              <Card.Content>
-               <img src={image3}/>
+               <img src={image}/>
                <Card.Header><strong>David</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>

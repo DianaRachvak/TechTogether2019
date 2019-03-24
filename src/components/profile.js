@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/profile.css';
-import avatar1 from "./image/avatar1.png";
+import image from "./image/image2.png";
 import {Container} from 'semantic-ui-react'
 import ListItem from 'react-bootstrap/ListGroup'
 import PropTypes from 'prop-types';
@@ -18,7 +18,7 @@ class Profile extends Component {
 
         return(
             <Container style={{marginTop:'7%', paddingLeft:'20%'}}>
-                <img src={avatar1}/>
+                <img src={image}/>
                 <Grid container spacing ={12}>
                 <Grid item xs={4}>
                     <ListItem>
