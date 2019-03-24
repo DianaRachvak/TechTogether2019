@@ -1,13 +1,86 @@
 import React, { Component } from 'react';
-import { MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import Grid from '@material-ui/core/Grid';
+import { Button, Card, Image } from 'semantic-ui-react'
 
-//const MatchingPage= () => {
+
+//import { MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+
 export default class MatchingPage extends Component {
     render() {
         return (
+          <Grid container spacing={24}>
+            <Grid item md={3}>
+            
+            <Card>
+             <Card.Content>
+               <Image src='.jpg' />
+               <Card.Header>Steve Sanders</Card.Header>
+               <Card.Meta>Friends of Elliot</Card.Meta>
+               <Card.Description>
+                 Steve wants to add you to the group <strong>best friends</strong>
+               </Card.Description>
+             </Card.Content>
+             <Card.Content extra>
+               <div className='ui two buttons'>
+                 <Button>
+                   Approve
+                 </Button>
+                 <Button>
+                   Decline
+                 </Button>
+               </div>
+             </Card.Content>
+           </Card>
 
-            <MDBCol>
-            <p>Best Matches Today </p>
+            </Grid>
+            <Grid item md={3}>
+            <Card>
+             <Card.Content>
+               <Image src='.jpg' />
+               <Card.Header>Steve Sanders</Card.Header>
+               <Card.Meta>Friends of Elliot</Card.Meta>
+               <Card.Description>
+                 Steve wants to add you to the group <strong>best friends</strong>
+               </Card.Description>
+             </Card.Content>
+             <Card.Content extra>
+               <div className='ui two buttons'>
+                 <Button>
+                   Approve
+                 </Button>
+                 <Button>
+                   Decline
+                 </Button>
+               </div>
+             </Card.Content>
+           </Card>
+
+            </Grid>
+            <Grid item md={3}>
+            <Card>
+             <Card.Content>
+               <Image src='.jpg' />
+               <Card.Header>Steve Sanders</Card.Header>
+               <Card.Meta>Friends of Elliot</Card.Meta>
+               <Card.Description>
+                 Steve wants to add you to the group <strong>best friends</strong>
+               </Card.Description>
+             </Card.Content>
+             <Card.Content extra>
+               <div className='ui two buttons'>
+                 <Button>
+                   Approve
+                 </Button>
+                 <Button>
+                   Decline
+                 </Button>
+               </div>
+             </Card.Content>
+           </Card>
+            </Grid>
+          </Grid>
+          /*  <MDBCol>
+
             <MDBCard style={{ width: "22rem"}}>
 
                 <MDBCardImage className="img-fluid" src="" waves />
@@ -47,6 +120,7 @@ export default class MatchingPage extends Component {
                 </MDBCardBody>
             </MDBCard>
             </MDBCol>
+            */
 
         )
     }
