@@ -7,6 +7,7 @@ import { Card, Image, Container } from 'semantic-ui-react'
 import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import { Redirect, Link} from 'react-router-dom';
 
 export default class MatchingPage extends Component {
     render() {
@@ -40,9 +41,11 @@ export default class MatchingPage extends Component {
                <Button variant="outlined" size="medium" >
                  LIKE
                </Button >
+               <Link to="/approvedDialogue">
                  <Button variant="outlined" size="medium" >
                    Approve
                  </Button >
+                 </Link>
                  <Button variant="outlined" size="medium" >
                    Decline
                  </Button>
@@ -67,9 +70,11 @@ export default class MatchingPage extends Component {
                  <Button variant="outlined" size="medium" >
                    LIKE
                  </Button >
+                 <Link to="/approvedDialogue">
                  <Button  variant="outlined" size="medium">
                    Approve
                  </Button>
+                 </ Link>
                  <Button variant="outlined" size="medium">
                    Decline
                  </Button>
@@ -94,9 +99,11 @@ export default class MatchingPage extends Component {
                  <Button variant="outlined" size="medium" >
                    LIKE
                  </Button >
-                 <Button  variant="outlined" size="medium">
-                   Approve
-                 </Button>
+                 <Link to="/approvedDialogue">
+                  <Button  variant="outlined" size="medium">
+                    Approve
+                  </Button>
+                 </Link>
                  <Button variant="outlined" size="medium">
                    Decline
                  </Button>
