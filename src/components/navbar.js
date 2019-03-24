@@ -34,8 +34,13 @@ class Header extends Component {
                 <Collapse isOpen = { this.state.collapse } navbar>
                     <NavbarNav left>
                         <NavItem>
-                            <Link to="/matchingpage">Best Matches</Link>
+                            <Link to="/matchingpage"><strong>Best Matches</strong></Link>
                         </NavItem>
+                    </NavbarNav>
+                    <NavbarNav right>
+                      <NavItem>
+                          <Link to="/icebreakers"><strong>Icebreakers</strong></Link>
+                      </NavItem>
                     </NavbarNav>
                 </Collapse>
             </Navbar>
@@ -44,5 +49,3 @@ class Header extends Component {
 }
 
 export default Header;
-
-

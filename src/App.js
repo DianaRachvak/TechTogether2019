@@ -8,6 +8,7 @@ import MatchingPage from './components/matchingpage';
 import Profile from './components/profile'
 import Survey from './components/survey'
 import Header from './components/navbar'
+import Icebreakers from './components/icebreakers'
 
 class App extends Component {
   render() {
@@ -15,12 +16,13 @@ class App extends Component {
       <div className="App">
          <Router>
          <Header />
-           <div>                         
+           <div>
             <Route exact path='/' component={LoginPage}/>
             <Route path="/profile" component={Profile} />
             <Route path='/menuList' component={MenuOnLeft}/>
-            <Route path='/homepage' component={HomePage}/>     
+            <Route path='/homepage' component={HomePage}/>
             <Route path='/matchingpage' component={MatchingPage}/>
+            <Route path='/icebreakers' component={Icebreakers}/>
             <Route path="/survey" component={Survey} />
            </div>
          </Router>

@@ -21,14 +21,14 @@ class Login extends Component{
                                         <strong>Sign in</strong>
                                     </h3>
                                 </div>
-                            <MDBInput 
+                            <MDBInput
                             label="Your email"
                             group
                             type="email"
                             validate
                             error="wrong"
                             success="right"
-                            //onChange={this.handleEmailChange} 
+                            //onChange={this.handleEmailChange}
                             />
                             <MDBInput
                             label="Your password"
