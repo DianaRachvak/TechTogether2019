@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Grid, Menu, Segment } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-//import { MatchingPage } from './components/matchingpage';
+import MatchingPage from './matchingpage';
+import HomePage from '../components/homepage';
 
 export default class MenuOnLeft extends Component {
-  state = { activeItem: 'bio' }
+  state = { activeItem: 'homepage' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -17,9 +18,10 @@ export default class MenuOnLeft extends Component {
           <Grid.Column width={4}>
             <Menu fluid vertical tabular>
               <Menu.Item
-                as={Link} to='/homepage'
+                as={Link} 
                 name='Home'
-                active={activeItem === 'homepage'}
+                to='homepage'
+                active={activeItem === 'Home'}
                 onClick={this.handleItemClick}
                 //<Link to={"/homepage"}>Home< /Link>
                 //<Link to="/react">React</Link>
@@ -39,7 +41,7 @@ export default class MenuOnLeft extends Component {
               <Menu.Item
                 as={Link} to='/matchingpage'
                 name='Match'
-                active={activeItem === 'MatchingPagee'}
+                active={activeItem === 'matchingpage'}
                 onClick={this.handleItemClick}
               />
             </Menu>

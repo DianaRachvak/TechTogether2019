@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Routes from './Routes';
+import LoginPage from './components/login'
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-         <Routes />
+         <LoginPage />
       </div>
     );
   }

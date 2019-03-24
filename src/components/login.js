@@ -85,6 +85,8 @@ import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import '../App.css';
+import { Link } from '@material-ui/core';
+//import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 const styles = theme => createStyles({
   root: {
@@ -166,6 +168,8 @@ class LoginPage extends Component {
               <Button type="submit" variant="contained" color="primary" className={this.props.classes.formButton}>
                 Log in
               </Button>
+
+              <Link to={"/homepage"} > Sign up </Link>
             </form>
           </Paper>
         </div>
