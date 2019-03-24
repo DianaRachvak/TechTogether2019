@@ -47,14 +47,16 @@ class Login extends Component{
                             //onClick={this.handleSubmit}
                             >Sign in
                             </MDBBtn>
+                            <Link to="/survey">
                             <MDBBtn
                             type="button"
                             gradient="blue"
                             rounded
                             className="btn-block z-depth-1a"
-                            //onClick={this.handleSubmit}
+                            //onClick={this.handleSubmit} 
                             >Sign Up
                             </MDBBtn>
+                            </Link>
                         </div>
                         </MDBCardBody>
                     </MDBCard>
