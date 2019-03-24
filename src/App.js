@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import LoginPage from './components/login'
+//*import LoginPage from './components/login'
+import MatchingPage from './components/matchingpage'
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-         <LoginPage />
+         <MatchingPage />
       </div>
     );
   }

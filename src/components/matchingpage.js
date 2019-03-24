@@ -1,32 +1,49 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
+import image1 from './image/image1.jpg';
+import image2 from './image/image2.jpg';
+import image3 from './image/image3.jpg';
 import Grid from '@material-ui/core/Grid';
-import { Button, Card, Image } from 'semantic-ui-react'
-
-
-//import { MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import { Card, Image, Container } from 'semantic-ui-react'
+import Button from '@material-ui/core/Button';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 
 export default class MatchingPage extends Component {
     render() {
+      const styles = {
+        card: {
+        maxWidth: 400,
+      },
+        button: {
+          margin: 5,
+          padding: 5,
+        }
+      };
+
         return (
+          <Container>
+          <h2>Best Matches Today</h2>
           <Grid container spacing={24}>
-            <Grid item md={3}>
-            
+            <Grid item md={4}>
             <Card>
              <Card.Content>
-               <Image src='.jpg' />
-               <Card.Header>Steve Sanders</Card.Header>
-               <Card.Meta>Friends of Elliot</Card.Meta>
+               <img src={image1} />
+               <Card.Header><strong>Steve Sanders</strong></Card.Header>
+               <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
-                 Steve wants to add you to the group <strong>best friends</strong>
+                 Do you want to accept dating with <strong>Steve</strong>?
                </Card.Description>
              </Card.Content>
+             <p></p>
              <Card.Content extra>
                <div className='ui two buttons'>
-                 <Button>
+               <Button variant="outlined" size="medium" >
+                 LIKE
+               </Button >
+                 <Button variant="outlined" size="medium" >
                    Approve
-                 </Button>
-                 <Button>
+                 </Button >
+                 <Button variant="outlined" size="medium" >
                    Decline
                  </Button>
                </div>
@@ -34,22 +51,26 @@ export default class MatchingPage extends Component {
            </Card>
 
             </Grid>
-            <Grid item md={3}>
+            <Grid item md={4}>
             <Card>
              <Card.Content>
-               <Image src='.jpg' />
-               <Card.Header>Steve Sanders</Card.Header>
-               <Card.Meta>Friends of Elliot</Card.Meta>
+               <img src={image2}/>
+               <Card.Header><strong>Andrew Grander</strong></Card.Header>
+               <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
-                 Steve wants to add you to the group <strong>best friends</strong>
+                 Do you want to accept dating with <strong>Andrew</strong>?
                </Card.Description>
              </Card.Content>
              <Card.Content extra>
+             <p></p>
                <div className='ui two buttons'>
-                 <Button>
+                 <Button variant="outlined" size="medium" >
+                   LIKE
+                 </Button >
+                 <Button  variant="outlined" size="medium">
                    Approve
                  </Button>
-                 <Button>
+                 <Button variant="outlined" size="medium">
                    Decline
                  </Button>
                </div>
@@ -57,22 +78,26 @@ export default class MatchingPage extends Component {
            </Card>
 
             </Grid>
-            <Grid item md={3}>
+            <Grid item md={4}>
             <Card>
              <Card.Content>
-               <Image src='.jpg' />
-               <Card.Header>Steve Sanders</Card.Header>
-               <Card.Meta>Friends of Elliot</Card.Meta>
+               <img src={image3}/>
+               <Card.Header><strong>David Sanders</strong></Card.Header>
+               <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
-                 Steve wants to add you to the group <strong>best friends</strong>
+                 Do you want to accept dating with <strong>David</strong>?
                </Card.Description>
              </Card.Content>
+             <p></p>
              <Card.Content extra>
                <div className='ui two buttons'>
-                 <Button>
+                 <Button variant="outlined" size="medium" >
+                   LIKE
+                 </Button >
+                 <Button  variant="outlined" size="medium">
                    Approve
                  </Button>
-                 <Button>
+                 <Button variant="outlined" size="medium">
                    Decline
                  </Button>
                </div>
@@ -80,92 +105,7 @@ export default class MatchingPage extends Component {
            </Card>
             </Grid>
           </Grid>
-          /*  <MDBCol>
-
-            <MDBCard style={{ width: "22rem"}}>
-=======
-import { MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
-import MenuOnLeft from './menuList';
-
-class MatchingPage extends Component {
-    render() {
-        return (
-            <div>
-                <MDBCol>
-                    <p>Best Matches Today </p>
-                    <MDBCard style={{ width: "22rem"}}>
-
-                        <MDBCardImage className="img-fluid" src="" waves />
-                        <MDBCardBody>
-                        <MDBCardTitle>Card title</MDBCardTitle>
-                        <MDBCardText>
-                            Some quick example text to build on the card title and make
-                            up the bulk of the card&apos;s content.
-                        </MDBCardText>
-                        <MDBBtn floating social="tw">
-                            <MDBIcon fab icon="twitter" className="pr-1" />
-                        </MDBBtn>
-                        </MDBCardBody>
->>>>>>> 86a51022d999035eaae2aa92333a36ecb7fcba44
-
-                        <MDBCardImage className="img-fluid" src="" waves />
-                        <MDBCardBody>
-                        <MDBCardTitle>Card title</MDBCardTitle>
-                        <MDBCardText>
-                            Some quick example text to build on the card title and make
-                            up the bulk of the card&apos;s content.
-                        </MDBCardText>
-                        <MDBBtn floating social="tw">
-                            <MDBIcon fab icon="twitter" className="pr-1" />
-                        </MDBBtn>
-                        </MDBCardBody>
-
-<<<<<<< HEAD
-                <MDBCardImage className="img-fluid" src="" waves />
-                <MDBCardBody>
-                <MDBCardTitle>Card title</MDBCardTitle>
-                <MDBCardText>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card&apos;s content.
-                </MDBCardText>
-                <MDBBtn floating social="tw">
-                    <MDBIcon fab icon="twitter" className="pr-1" />
-                </MDBBtn>
-                </MDBCardBody>
-
-                <MDBCardImage className="img-fluid" src="" waves />
-                <MDBCardBody>
-                <MDBCardTitle>Card title</MDBCardTitle>
-                <MDBCardText>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card&apos;s content.
-                </MDBCardText>
-                <MDBBtn floating social="tw">
-                    <MDBIcon fab icon="twitter" className="pr-1" />
-                </MDBBtn>
-                </MDBCardBody>
-            </MDBCard>
-            </MDBCol>
-            */
-=======
-                        <MDBCardImage className="img-fluid" src="" waves />
-                        <MDBCardBody>
-                        <MDBCardTitle>Card title</MDBCardTitle>
-                        <MDBCardText>
-                            Some quick example text to build on the card title and make
-                            up the bulk of the card&apos;s content.
-                        </MDBCardText>
-                        <MDBBtn floating social="tw">
-                            <MDBIcon fab icon="twitter" className="pr-1" />
-                        </MDBBtn>
-                        </MDBCardBody>
-                    </MDBCard>
-                </MDBCol>
-            </div>
->>>>>>> 86a51022d999035eaae2aa92333a36ecb7fcba44
-
+          </Container>
         )
     }
 }
-
-export default MatchingPage;
