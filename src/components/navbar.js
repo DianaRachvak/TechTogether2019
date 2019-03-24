@@ -32,9 +32,9 @@ class Header extends Component {
             <Navbar color='#84C1FF' dark expand="md" scrolling>
                 { !this.state.isWideEnough && <NavbarToggler onClick = { this.handleOnClick } />}
                 <Collapse isOpen = { this.state.collapse } navbar>
-                    <NavbarNav left>
+                    <NavbarNav>
                         <NavItem>
-                            <Link to="/matchingpage">Best Matches</Link>
+                            <Link to="/">Perky Geeks</Link>
                         </NavItem>
                     </NavbarNav>
                 </Collapse>

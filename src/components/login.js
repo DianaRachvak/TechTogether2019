@@ -38,7 +38,7 @@ class Login extends Component{
                             containerClass="mb-0"
                             //onChange={this.handlePasswordChange}
                             />
-                            <div className="text-center mb-3">
+                            <div className="text-center mb-1">
                             <MDBBtn
                             type="button"
                             gradient="blue"
@@ -47,13 +47,16 @@ class Login extends Component{
                             //onClick={this.handleSubmit}
                             >Sign in
                             </MDBBtn>
+                            <MDBBtn
+                            type="button"
+                            gradient="blue"
+                            rounded
+                            className="btn-block z-depth-1a"
+                            //onClick={this.handleSubmit}
+                            >Sign Up
+                            </MDBBtn>
                         </div>
                         </MDBCardBody>
-                    <MDBModalFooter className="mx-5 pt-3 mb-1">
-                    <p className="font-small grey-text d-flex justify-content-end">
-                        <Link className="blue-text ml-1" to={"./survey"}>Try out this personality quiz!</Link>
-                    </p>
-                    </MDBModalFooter>
                     </MDBCard>
                 </MDBCol>
             </MDBRow>
