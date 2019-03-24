@@ -6,4 +6,5 @@ class HomePage extends Component {
         <div><p>HomePage</p></div>
       )
     }
-} export default (HomePage);
+} 
+export default HomePage;

@@ -1,126 +1,67 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withStyles, createStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import '../App.css';
-import { Redirect, Link } from 'react-router-dom'
-import HomePage from './homepage';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import React, {Component} from 'react';
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon, MDBModalFooter } from 'mdbreact';
+import '../styles/login.css';
 
-const styles = theme => createStyles({
-  root: {
-    height: '100%',
-    display: 'flex',
-    flexFlow: 'column'
-  },
-  content: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexGrow: '1'
-  },
-  formContainer: {
-    maxWidth: '400px',
-    height: '400px',
-    padding: '32px',
-    display: 'flex',
-    alignItems: 'center'
-  },
-  loginForm: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    height: '85%'
-  },
-  formHeader: {
-    textAlign: 'center',
-    width: '100%',
-  },
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-    width: '100%'
-  },
-  formButton: {
-    margin: '16px auto',
-    width: '30%'
-  }
-});
+class Login extends Component{
+  render(){
+    //let { from } = this.props.location.state || { from: { pathname: "/" } };
+    //let { redirectToReferrer } = this.state;
 
-class LoginPage extends Component {
-  state = {
-    redirect: false
-  }
-  setRedirect = () => {
-    this.setState({
-      redirect: true
-    })
-  }
-  renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to='/homepage'/>
-    }
-  }
-
-
-  render() {
-    return (
-      <div className={this.props.classes.root}>
-        <AppBar position="static" color="primary">
-          <Toolbar>
-            <Typography variant="h6" color="inherit">
-              Perky Geek
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        <br />
-        <div className={this.props.classes.content}>
-          <Paper elevation={1} className={this.props.classes.formContainer}>
-            <form className={this.props.classes.loginForm} onSubmit={this.props.logMeIn}>
-              <Typography variant="h4" color="inherit" className={this.props.classes.formHeader}>
-                Log in
-              </Typography>
-              <TextField
-                required
-                id="outlined-email-input"
-                label="Email"
-                className={this.props.classes.textField}
-                type="email"
-                name="email"
-                autoComplete="email"
-                margin="normal"
-                variant="outlined"
-              />
-              <TextField
-                required
-                id="outlined-password-input"
-                label="Password"
-                className={this.props.classes.textField}
-                type="password"
-                autoComplete="current-password"
-                margin="normal"
-                variant="outlined"
-              />
-              <div className={this.props.classes.formButton}>
-                {this.renderRedirect()}
-                <Button type="submit" variant="contained" color="primary"
-                 onClick={this.setRedirect} 
-                 marginleft="30">Log In</Button>
-              </div>
-            </form>
-          </Paper>
-        </div>
-      </div>
-    );
-  }
+    //if (redirectToReferrer) return <Redirect to={from} />;
+    return(
+        <div className="loginBox parallax-visual">
+        <MDBContainer className="d-flex justify-content-center">
+                <MDBRow>
+                    <MDBCol>
+                        <MDBCard>
+                            <MDBCardBody className="mx-4">
+                                <div className="text-center">
+                                    <h3 className="dark-grey-text mb-5">
+                                        <strong>Sign in</strong>
+                                    </h3>
+                                </div>
+                            <MDBInput 
+                            label="Your email"
+                            group
+                            type="email"
+                            validate
+                            error="wrong"
+                            success="right"
+                            //onChange={this.handleEmailChange} 
+                            />
+                            <MDBInput
+                            label="Your password"
+                            group
+                            type="password"
+                            validate
+                            containerClass="mb-0"
+                            //onChange={this.handlePasswordChange}
+                            />
+                            <div className="text-center mb-3">
+                            <MDBBtn
+                            type="button"
+                            gradient="blue"
+                            rounded
+                            className="btn-block z-depth-1a"
+                            //onClick={this.handleSubmit}
+                            >Sign in
+                            </MDBBtn>
+                        </div>
+                        </MDBCardBody>
+                    <MDBModalFooter className="mx-5 pt-3 mb-1">
+                    <p className="font-small grey-text d-flex justify-content-end">
+                        <Link className="blue-text ml-1" to={"./survey"}>Try out this personality quiz!</Link>
+                    </p>
+                    </MDBModalFooter>
+                    </MDBCard>
+                </MDBCol>
+            </MDBRow>
+        </MDBContainer>
+    </div>
+    )
+}
 }
 
-LoginPage.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
-export default withStyles(styles)(LoginPage);
+export default Login;
