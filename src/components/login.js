@@ -1,78 +1,3 @@
-// import React, { Component } from 'react';
-
-
-// class LoginPage extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       username: 'geek',
-//       password: '123',
-//       error: '',
-//     };
-
-//     this.handlePassChange = this.handlePassChange.bind(this);
-//     this.handleUserChange = this.handleUserChange.bind(this);
-//     this.handleSubmit = this.handleSubmit.bind(this);
-//     this.dismissError = this.dismissError.bind(this);
-//   }
-
-//   dismissError() {
-//     this.setState({ error: '' });
-//   }
-
-//   handleSubmit(evt) {
-//     evt.preventDefault();
-
-//     if (!this.state.username) {
-//       return this.setState({ error: 'Username is required' });
-//     }
-
-//     if (!this.state.password) {
-//       return this.setState({ error: 'Password is required' });
-//     }
-
-//     return this.setState({ error: '' });
-//   }
-
-//   handleUserChange(evt) {
-//     this.setState({
-//       username: evt.target.value,
-//     });
-//   };
-
-//   handlePassChange(evt) {
-//     this.setState({
-//       password: evt.target.value,
-//     });
-//   }
-
-//   render() {
-//     
-//     return (
-//       <div className="Login">
-//         <form onSubmit={this.handleSubmit}>
-//           {
-//             this.state.error &&
-//             <h3 data-test="error" onClick={this.dismissError}>
-//               <button onClick={this.dismissError}>✖</button>
-//               {this.state.error}
-//             </h3>
-//           }
-//           <label>User Name</label>
-//           <input type="text" data-test="username" value={this.state.username} onChange={this.handleUserChange} />
-
-//           <label>Password</label>
-//           <input type="password" data-test="password" value={this.state.password} onChange={this.handlePassChange} />
-
-//           <input type="submit" value="Log In" data-test="submit" />
-//         </form>
-//       </div>
-//     );
-//   }
-// }
-
-// export default LoginPage;
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles, createStyles } from '@material-ui/core/styles';
@@ -83,8 +8,9 @@ import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import '../App.css';
-import { Link } from '@material-ui/core';
-//import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
+import HomePage from './homepage';
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 const styles = theme => createStyles({
   root: {
@@ -126,6 +52,21 @@ const styles = theme => createStyles({
 });
 
 class LoginPage extends Component {
+  state = {
+    redirect: false
+  }
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='/homepage'/>
+    }
+  }
+
+
   render() {
     return (
       <div className={this.props.classes.root}>
@@ -136,6 +77,7 @@ class LoginPage extends Component {
             </Typography>
           </Toolbar>
         </AppBar>
+        <br />
         <div className={this.props.classes.content}>
           <Paper elevation={1} className={this.props.classes.formContainer}>
             <form className={this.props.classes.loginForm} onSubmit={this.props.logMeIn}>
@@ -149,7 +91,7 @@ class LoginPage extends Component {
                 className={this.props.classes.textField}
                 type="email"
                 name="email"
-                //autoComplete="email"
+                autoComplete="email"
                 margin="normal"
                 variant="outlined"
               />
@@ -159,15 +101,16 @@ class LoginPage extends Component {
                 label="Password"
                 className={this.props.classes.textField}
                 type="password"
-                //autoComplete="current-password"
+                autoComplete="current-password"
                 margin="normal"
                 variant="outlined"
               />
-              <Button type="submit" variant="contained" color="primary" className={this.props.classes.formButton}>
-                Log in
-              </Button>
-
-              <Link to={"/homepage"} > Sign up </Link>
+              <div className={this.props.classes.formButton}>
+                {this.renderRedirect()}
+                <Button type="submit" variant="contained" color="primary"
+                 onClick={this.setRedirect} 
+                 marginleft="30">Log In</Button>
+              </div>
             </form>
           </Paper>
         </div>
