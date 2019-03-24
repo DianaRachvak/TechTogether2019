@@ -29,10 +29,10 @@ export default class MatchingPage extends Component {
             <Card>
              <Card.Content>
                <img src={image1} />
-               <Card.Header><strong>Steve Sanders</strong></Card.Header>
+               <Card.Header><strong>Steve</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
-                 Do you want to accept dating with <strong>Steve</strong>?
+                 Do you want to accept chatting with <strong>Steve</strong>?
                </Card.Description>
              </Card.Content>
              <p></p>
@@ -58,10 +58,10 @@ export default class MatchingPage extends Component {
             <Card>
              <Card.Content>
                <img src={image2}/>
-               <Card.Header><strong>Andrew Grander</strong></Card.Header>
+               <Card.Header><strong>Andrewr</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
-                 Do you want to accept dating with <strong>Andrew</strong>?
+                 Do you want to accept chatting with <strong>Andrew</strong>?
                </Card.Description>
              </Card.Content>
              <Card.Content extra>
@@ -87,10 +87,10 @@ export default class MatchingPage extends Component {
             <Card>
              <Card.Content>
                <img src={image3}/>
-               <Card.Header><strong>David Sanders</strong></Card.Header>
+               <Card.Header><strong>David</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
-                 Do you want to accept dating with <strong>David</strong>?
+                 Do you want to accept chatting with <strong>David</strong>?
                </Card.Description>
              </Card.Content>
              <p></p>
