@@ -8,6 +8,11 @@ import MatchingPage from './components/matchingpage';
 import Profile from './components/profile'
 import Survey from './components/survey'
 import Header from './components/navbar'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faIgloo)
 
 class App extends Component {
   render() {
