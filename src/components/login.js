@@ -47,9 +47,7 @@
 //   }
 
 //   render() {
-//     // NOTE: I use data-attributes for easier E2E testing
-//     // but you don't need to target those (any css-selector will work)
-
+//     
 //     return (
 //       <div className="Login">
 //         <form onSubmit={this.handleSubmit}>
@@ -85,6 +83,8 @@ import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import '../App.css';
+import { Link } from '@material-ui/core';
+//import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 const styles = theme => createStyles({
   root: {
@@ -149,7 +149,7 @@ class LoginPage extends Component {
                 className={this.props.classes.textField}
                 type="email"
                 name="email"
-                autoComplete="email"
+                //autoComplete="email"
                 margin="normal"
                 variant="outlined"
               />
@@ -159,13 +159,15 @@ class LoginPage extends Component {
                 label="Password"
                 className={this.props.classes.textField}
                 type="password"
-                autoComplete="current-password"
+                //autoComplete="current-password"
                 margin="normal"
                 variant="outlined"
               />
               <Button type="submit" variant="contained" color="primary" className={this.props.classes.formButton}>
                 Log in
               </Button>
+
+              <Link to={"/homepage"} > Sign up </Link>
             </form>
           </Paper>
         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import Grid from '@material-ui/core/Grid';
 import { Button, Card, Image } from 'semantic-ui-react'
 
@@ -82,19 +83,44 @@ export default class MatchingPage extends Component {
           /*  <MDBCol>
 
             <MDBCard style={{ width: "22rem"}}>
+=======
+import { MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import MenuOnLeft from './menuList';
 
-                <MDBCardImage className="img-fluid" src="" waves />
-                <MDBCardBody>
-                <MDBCardTitle>Card title</MDBCardTitle>
-                <MDBCardText>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card&apos;s content.
-                </MDBCardText>
-                <MDBBtn floating social="tw">
-                    <MDBIcon fab icon="twitter" className="pr-1" />
-                </MDBBtn>
-                </MDBCardBody>
+class MatchingPage extends Component {
+    render() {
+        return (
+            <div>
+                <MDBCol>
+                    <p>Best Matches Today </p>
+                    <MDBCard style={{ width: "22rem"}}>
 
+                        <MDBCardImage className="img-fluid" src="" waves />
+                        <MDBCardBody>
+                        <MDBCardTitle>Card title</MDBCardTitle>
+                        <MDBCardText>
+                            Some quick example text to build on the card title and make
+                            up the bulk of the card&apos;s content.
+                        </MDBCardText>
+                        <MDBBtn floating social="tw">
+                            <MDBIcon fab icon="twitter" className="pr-1" />
+                        </MDBBtn>
+                        </MDBCardBody>
+>>>>>>> 86a51022d999035eaae2aa92333a36ecb7fcba44
+
+                        <MDBCardImage className="img-fluid" src="" waves />
+                        <MDBCardBody>
+                        <MDBCardTitle>Card title</MDBCardTitle>
+                        <MDBCardText>
+                            Some quick example text to build on the card title and make
+                            up the bulk of the card&apos;s content.
+                        </MDBCardText>
+                        <MDBBtn floating social="tw">
+                            <MDBIcon fab icon="twitter" className="pr-1" />
+                        </MDBBtn>
+                        </MDBCardBody>
+
+<<<<<<< HEAD
                 <MDBCardImage className="img-fluid" src="" waves />
                 <MDBCardBody>
                 <MDBCardTitle>Card title</MDBCardTitle>
@@ -121,9 +147,25 @@ export default class MatchingPage extends Component {
             </MDBCard>
             </MDBCol>
             */
+=======
+                        <MDBCardImage className="img-fluid" src="" waves />
+                        <MDBCardBody>
+                        <MDBCardTitle>Card title</MDBCardTitle>
+                        <MDBCardText>
+                            Some quick example text to build on the card title and make
+                            up the bulk of the card&apos;s content.
+                        </MDBCardText>
+                        <MDBBtn floating social="tw">
+                            <MDBIcon fab icon="twitter" className="pr-1" />
+                        </MDBBtn>
+                        </MDBCardBody>
+                    </MDBCard>
+                </MDBCol>
+            </div>
+>>>>>>> 86a51022d999035eaae2aa92333a36ecb7fcba44
 
         )
     }
 }
 
-//export default MatchingPage;
+export default MatchingPage;
