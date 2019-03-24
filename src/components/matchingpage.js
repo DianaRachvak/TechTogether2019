@@ -21,7 +21,7 @@ export default class MatchingPage extends Component {
 
         return (
           <Container>
-          <h2>Best Matches Today</h2>
+          <h2>Top Matches</h2>
           <Grid container spacing={24}>
             <Grid item md={4}>
             <Card>
