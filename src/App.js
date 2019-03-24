@@ -7,6 +7,7 @@ import MatchingPage from './components/matchingpage';
 import Profile from './components/profile'
 import Survey from './components/survey'
 import Header from './components/navbar'
+import Dialogue from './components/approvedDialogue'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path='/menuList' component={Menu}/>    
             <Route path='/matchingpage' component={MatchingPage}/>
             <Route path="/survey" component={Survey} />
+            <Route path="approvedDialogue" component={Dialogue} />
            </div>
          </Router>
       </div>
