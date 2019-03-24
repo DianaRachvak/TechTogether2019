@@ -25,6 +25,7 @@ class Profile extends Component {
                             <label htmlFor="formGroupExampleInput">First Name</label>
                             <input
                             type="text"
+                            placeholder = "Rebecca"
                             className="form-control"
                             id="formGroupExampleInput"
                             />
@@ -33,6 +34,7 @@ class Profile extends Component {
                             <label htmlFor="formGroupExampleInput">Email</label>
                             <input
                             type="text"
+                            placeholder = "Rebecca@gmail.com"
                             className="form-control"
                             id="formGroupExampleInput"
                             />
@@ -41,6 +43,7 @@ class Profile extends Component {
                             <label htmlFor="formGroupExampleInput">Three Things you love to do</label>
                             <input
                             type="text"
+                            placeholder = "Sleep, Eat, Chill"
                             className="form-control"
                             id="formGroupExampleInput"
                             />
@@ -51,6 +54,7 @@ class Profile extends Component {
                             <label htmlFor="formGroupExampleInput">Last Name</label>
                             <input
                             type="text"
+                            placeholder = "Watson"
                             className="form-control"
                             id="formGroupExampleInput"
                             />
@@ -59,6 +63,7 @@ class Profile extends Component {
                             <label htmlFor="formGroupExampleInput">Age</label>
                             <input
                             type="text"
+                            placeholder = "22"
                             className="form-control"
                             id="formGroupExampleInput"
                             />
@@ -67,6 +72,7 @@ class Profile extends Component {
                             <label htmlFor="formGroupExampleInput">Interest</label>
                             <input
                             type="text"
+                            placeholder = "Stay home"
                             className="form-control"
                             id="formGroupExampleInput"
                             />

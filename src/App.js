@@ -7,16 +7,8 @@ import MatchingPage from './components/matchingpage';
 import Profile from './components/profile'
 import Survey from './components/survey'
 import Header from './components/navbar'
-<<<<<<< HEAD
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faIgloo)
-=======
 import Icebreakers from './components/icebreakers'
 import Dialogue from './components/approvedDialogue'
->>>>>>> f991b28ff255bc55034d0f7b2fd5f7a7b02135bf
 
 class App extends Component {
   render() {
