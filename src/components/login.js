@@ -5,10 +5,6 @@ import '../styles/login.css';
 
 class Login extends Component{
   render(){
-    //let { from } = this.props.location.state || { from: { pathname: "/" } };
-    //let { redirectToReferrer } = this.state;
-
-    //if (redirectToReferrer) return <Redirect to={from} />;
     return(
         <div className="loginBox parallax-visual">
         <MDBContainer className="d-flex justify-content-center">
