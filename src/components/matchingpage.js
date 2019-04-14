@@ -16,7 +16,12 @@ export default class MatchingPage extends Component {
         button: {
           margin: 5,
           padding: 5,
-        }
+        },
+        img: {
+          minWidth:300,
+          minHeight:300,
+          placeitem: 'center',       
+        },
       };
 
         return (
@@ -26,7 +31,7 @@ export default class MatchingPage extends Component {
             <Grid item md={4}>
             <Card>
              <Card.Content>
-               <img src={image} />
+               <div><img src={image} /></div>
                <Card.Header><strong>Steve</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
@@ -55,7 +60,7 @@ export default class MatchingPage extends Component {
             <Grid item md={4}>
             <Card>
              <Card.Content>
-               <img src={image}/>
+               <div><img src={image}/></div>
                <Card.Header><strong>Andrew</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>
@@ -84,7 +89,7 @@ export default class MatchingPage extends Component {
             <Grid item md={4}>
             <Card>
              <Card.Content>
-               <img src={image}/>
+               <div><img src={image}/></div>
                <Card.Header><strong>David</strong></Card.Header>
                <Card.Meta>He has matched with you!</Card.Meta>
                <Card.Description>

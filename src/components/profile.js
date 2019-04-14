@@ -3,8 +3,6 @@ import '../styles/profile.css';
 import image from "./image/image2.png";
 import {Container} from 'semantic-ui-react'
 import ListItem from 'react-bootstrap/ListGroup'
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 class Profile extends Component {

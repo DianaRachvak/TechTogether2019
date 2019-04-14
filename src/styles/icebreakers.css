@@ -4,8 +4,7 @@ height: 100%;
 body{
 background-image:  url('../components/image/icebreakersImg2.jpg') !important;
 background-size: cover !important;
-height: 100vh;
 background-position: center;
 overflow: hidden;
-padding-bottom: 10%;
+padding-bottom: 15%;
 }
